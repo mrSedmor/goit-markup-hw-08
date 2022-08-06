@@ -1,0 +1,37 @@
+.subscriptions {
+  margin-left: auto;
+}
+
+.subscriptions__form {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.subscriptions__input {
+  display: block;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $text-secondary-color;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+
+  transition: border-color 250ms $timing-function;
+
+  &::placeholder {
+    color: $text-secondary-color;
+  }
+}
+
+.subscriptions__button {
+  margin-left: 12px;
+}

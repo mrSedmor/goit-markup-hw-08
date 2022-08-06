@@ -1,0 +1,21 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__site-nav {
+  margin-left: 93px;
+}
+
+.header__header-contact {
+  margin-left: auto;
+}

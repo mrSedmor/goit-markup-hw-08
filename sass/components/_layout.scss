@@ -1,0 +1,25 @@
+.container {
+  width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: $title-primary-color;
+  text-align: center;
+}
+
+.section__team {
+  background-color: $background-secondary-color;
+}

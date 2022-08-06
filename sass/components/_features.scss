@@ -1,0 +1,46 @@
+.features {
+  padding-bottom: 0;
+}
+
+.features__list {
+  display: flex;
+  gap: $gutter;
+}
+
+.features__item {
+  @include calcWidth(4);
+}
+
+.features__title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: $title-primary-color;
+  text-transform: uppercase;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.features__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+
+  color: $title-primary-color;
+  background-color: $background-secondary-color;
+  border-radius: 4px;
+}
+
+.features__icon {
+  --icon-accent-color: #{$accent-color};
+  fill: currentColor;
+}

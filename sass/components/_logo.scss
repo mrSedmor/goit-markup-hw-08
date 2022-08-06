@@ -1,0 +1,19 @@
+/*  Логотип */
+.logo {
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: $logo-primary-color;
+  text-decoration: none;
+}
+
+.logo__accent {
+  color: $accent-color;
+}
+
+.logo--light {
+  color: $logo-secondary-color;
+}

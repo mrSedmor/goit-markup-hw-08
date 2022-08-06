@@ -1,0 +1,29 @@
+.header-contact {
+  display: flex;
+  gap: 50px;
+}
+
+//.header-contact__item {}
+
+.header-contact__link {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.header-contact__icon {
+  margin-right: 10px;
+}
