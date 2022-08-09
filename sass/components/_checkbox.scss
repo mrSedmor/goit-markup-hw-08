@@ -4,7 +4,7 @@
   margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 12px;
+
   align-items: center;
 
   /* border: 1px solid transparent;
@@ -14,18 +14,27 @@
   &:focus-within {
     border-color: var(--accent-color);
   } */
+
+  @media screen and (min-width: $width-desktop) {
+    padding-left: 12px;
+  }
 }
 
 .checkbox__label {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $text-primary-color;
+
+  @media screen and (min-width: $width-desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__input {
   position: absolute;
-  left: 21px;
+  left: 9px;
   top: 50%;
   width: 1px;
   height: 1px;
@@ -37,6 +46,9 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
   /* appearance: none; */
+  @media screen and (min-width: $width-desktop) {
+    left: 21px;
+  }
 }
 
 .checkbox__custom-input {

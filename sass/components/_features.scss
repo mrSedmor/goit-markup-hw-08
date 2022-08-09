@@ -1,14 +1,7 @@
 .features {
-  padding-bottom: 0;
-}
-
-.features__list {
-  display: flex;
-  gap: $gutter;
 }
 
 .features__item {
-  @include calcWidth(4);
 }
 
 .features__title {
@@ -43,4 +36,32 @@
 .features__icon {
   --icon-accent-color: #{$accent-color};
   fill: currentColor;
+}
+
+@media screen and (max-width: $width-tablet - 1px) {
+  .features__item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .features__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $width-tablet) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gutter;
+  }
+
+  .features__item {
+    @include calcWidth(2);
+  }
+}
+
+@media screen and (min-width: $width-desktop) {
+  .features__item {
+    @include calcWidth(4);
+  }
 }

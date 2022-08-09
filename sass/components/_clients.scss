@@ -1,11 +1,20 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: $gutter;
 }
 
 .clients__item {
-  @include calcWidth(6);
+  @include calcWidth(2);
   height: 90px;
+
+  @media screen and (min-width: $width-tablet) {
+    @include calcWidth(3);
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    @include calcWidth(6);
+  }
 }
 
 .clients__link {

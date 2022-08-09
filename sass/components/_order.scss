@@ -4,8 +4,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  min-width: $width-min-allowable;
+  max-width: 450px;
+  // min-height: 581px;
   padding: 40px;
 
   background: $background-primary-color;
@@ -19,6 +21,10 @@
 
   .is-hidden & {
     transform: translate(-50%, -50%) scale(0);
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    max-width: 528px;
   }
 }
 

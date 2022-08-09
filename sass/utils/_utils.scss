@@ -17,6 +17,10 @@
   pointer-events: none;
 }
 
+.block-scroll {
+  overflow: hidden;
+}
+
 @mixin calcWidth($columns, $gap: #{$gutter}, $width: 100%) {
   // width: calc((#{$width} - (#{$columns} - 1) * #{$gap}) / #{$columns});
   width: calc((#{$width} + #{$gap}) / #{$columns} - #{$gap});

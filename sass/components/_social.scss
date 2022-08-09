@@ -1,5 +1,7 @@
-%social__list {
+%social {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -16,8 +18,8 @@
   transition-timing-function: $timing-function;
 }
 
-.team-social__list {
-  @extend %social__list;
+.team-social {
+  @extend %social;
 
   margin-top: 16px;
 }
@@ -39,9 +41,8 @@
 
 //.footer-social { }
 
-.footer-social__list {
-  @extend %social__list;
-
+.footer-social {
+  @extend %social;
   margin-top: 20px;
 }
 
@@ -58,4 +59,7 @@
   &:focus {
     background-color: $accent-color;
   }
+}
+
+@media screen and (min-width: $width-tablet) {
 }

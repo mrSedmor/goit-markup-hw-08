@@ -4,7 +4,8 @@
 }
 
 .field__label {
-  /* display: block; */
+  display: block;
+  width: fit-content;
 
   font-size: 12px;
   line-height: 1.17;

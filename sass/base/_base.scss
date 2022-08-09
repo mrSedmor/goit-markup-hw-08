@@ -1,15 +1,29 @@
 body {
-  min-width: $container-width;
+  min-width: $width-min-allowable;
 
   font-family: $font-primary;
 
   color: $text-primary-color;
 
   font-size: 16px;
+
+  @media screen and (min-width: $width-mobile) {
+    min-width: $width-mobile;
+  }
+
+  @media screen and (min-width: $width-tablet) {
+    min-width: $width-tablet;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    min-width: $width-desktop;
+  }
 }
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 svg {

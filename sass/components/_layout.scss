@@ -1,25 +1,68 @@
 .container {
-  width: $container-width;
+  // width: $container-width;
+  min-width: $width-min-allowable;
+  max-width: $width-mobile;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
 
   color: $title-primary-color;
   text-align: center;
+
+  @media screen and (min-width: $width-desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.section__features {
 }
 
 .section__team {
   background-color: $background-secondary-color;
+}
+
+.section__area {
+}
+
+@media screen and (max-width: $width-tablet - 1px) {
+  .section__area {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $width-tablet) {
+  .container {
+    max-width: $width-tablet;
+  }
+  .section__features {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: $width-desktop) {
+  .container {
+    max-width: $width-desktop;
+  }
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .section__title {
+    margin-bottom: 50px;
+  }
 }

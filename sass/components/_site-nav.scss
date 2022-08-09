@@ -1,20 +1,11 @@
 .site-nav {
-  display: flex;
-  gap: 50px;
 }
 
 //.site-nav__item {}
 
 .site-nav__link {
-  position: relative;
-
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+
   letter-spacing: 0.02em;
   color: $title-primary-color;
 
@@ -28,8 +19,50 @@
 
 .site-nav__link--current {
   color: $accent-color;
+}
 
-  &::after {
+@keyframes currentLinkAnimation {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media screen and (max-width: $width-tablet - 1px) {
+  .site-nav {
+    flex-grow: 1;
+  }
+
+  .site-nav__link {
+    font-size: 40px;
+    line-height: 1.18;
+  }
+
+  .site-nav__item:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: $width-tablet) {
+  .site-nav {
+    display: flex;
+    gap: 50px;
+  }
+
+  .site-nav__link {
+    position: relative;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  .site-nav__link--current::after {
     content: '';
 
     position: absolute;
@@ -43,13 +76,5 @@
     background-color: $accent-color;
 
     animation: currentLinkAnimation 250ms $timing-function both;
-  }
-}
-@keyframes currentLinkAnimation {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
   }
 }
