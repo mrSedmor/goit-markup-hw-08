@@ -13,7 +13,7 @@
   display: none;
 }
 
-@media screen and (max-width: $width-tablet - 1px) {
+@media screen and (max-width: ($width-tablet - 1px)) {
   .header-contact {
     margin-top: auto;
   }

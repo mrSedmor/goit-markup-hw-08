@@ -7,7 +7,7 @@
 }
 
 .team__item {
-  @media screen and (max-width: $width-tablet - 1px) {
+  @media screen and (max-width: ($width-tablet - 1px)) {
     width: 100%;
   }
 

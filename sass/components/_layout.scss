@@ -37,7 +37,7 @@
 .section__area {
 }
 
-@media screen and (max-width: $width-tablet - 1px) {
+@media screen and (max-width: ($width-tablet - 1px)) {
   .section__area {
     display: none;
   }
