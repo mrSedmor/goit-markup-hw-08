@@ -1,14 +1,26 @@
 .container {
-  // width: $container-width;
   min-width: $width-min-allowable;
   max-width: $width-mobile;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media screen and (min-width: $width-tablet) {
+    max-width: $width-tablet;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    max-width: $width-desktop;
+  }
 }
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $width-desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
@@ -22,12 +34,17 @@
   text-align: center;
 
   @media screen and (min-width: $width-desktop) {
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.17;
   }
 }
 
 .section__features {
+  @media screen and (min-width: $width-tablet) {
+    padding-bottom: 0;
+  }
 }
 
 .section__team {
@@ -35,34 +52,7 @@
 }
 
 .section__area {
-}
-
-@media screen and (max-width: ($width-tablet - 1px)) {
-  .section__area {
+  @media screen and (max-width: ($width-desktop - 1px)) {
     display: none;
-  }
-}
-
-@media screen and (min-width: $width-tablet) {
-  .container {
-    max-width: $width-tablet;
-  }
-  .section__features {
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width: $width-desktop) {
-  .container {
-    max-width: $width-desktop;
-  }
-
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
-  .section__title {
-    margin-bottom: 50px;
   }
 }

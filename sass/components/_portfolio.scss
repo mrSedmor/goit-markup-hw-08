@@ -6,12 +6,22 @@
 }
 
 .portfolio__item {
-  @include calcWidth(3);
+  width: 100%;
+
+  @media screen and (min-width: $width-tablet) {
+    @include calcWidth(2);
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    @include calcWidth(3);
+  }
 }
 
 .portfolio__container {
   position: relative;
   overflow: hidden;
+  object-position: center;
+  object-fit: cover;
 }
 
 .portfolio__overlay {

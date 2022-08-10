@@ -6,18 +6,6 @@ body {
   color: $text-primary-color;
 
   font-size: 16px;
-
-  @media screen and (min-width: $width-mobile) {
-    min-width: $width-mobile;
-  }
-
-  @media screen and (min-width: $width-tablet) {
-    min-width: $width-tablet;
-  }
-
-  @media screen and (min-width: $width-desktop) {
-    min-width: $width-desktop;
-  }
 }
 
 img {
