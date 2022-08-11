@@ -34,7 +34,8 @@
 
   transition: border-color 250ms $timing-function;
 
-  &:focus {
+  &:focus,
+  &:hover {
     border-color: $accent-color;
   }
 }
@@ -50,7 +51,8 @@
 
   transition: color 250ms $timing-function;
 
-  .field:focus-within & {
+  .field:focus-within &,
+  .field:hover & {
     color: $accent-color;
   }
 }
@@ -73,7 +75,8 @@
 
   resize: none;
 
-  &:focus {
+  &:focus,
+  &:hover {
     border-color: $accent-color;
   }
 
