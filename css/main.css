@@ -956,14 +956,14 @@ svg {
 }
 @media screen and (min-width: 768px) {
   .subscriptions__input {
-    max-width: 450px;
+    width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .subscriptions__input {
-    max-width: 358px;
+    width: 358px;
     margin-right: 0;
     margin-left: 0;
   }

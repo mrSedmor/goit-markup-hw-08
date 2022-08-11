@@ -35,13 +35,13 @@
   }
 
   @media screen and (min-width: $width-tablet) {
-    max-width: 450px;
+    width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media screen and (min-width: $width-desktop) {
-    max-width: 358px;
+    width: 358px;
     margin-right: 0;
     margin-left: 0;
   }
