@@ -1,9 +1,7 @@
 .team {
-  // @media screen and (min-width: $width-tablet) {
   display: flex;
   flex-wrap: wrap;
   gap: $gutter;
-  // }
 }
 
 .team__item {

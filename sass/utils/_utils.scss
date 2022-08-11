@@ -21,6 +21,12 @@
   overflow: hidden;
 }
 
+.block-scroll--mobile {
+  @media screen and (max-width: ($width-tablet - 1px)) {
+    overflow: hidden;
+  }
+}
+
 @mixin calcWidth($columns, $gap: #{$gutter}, $width: 100%) {
   // width: calc((#{$width} - (#{$columns} - 1) * #{$gap}) / #{$columns});
   width: calc((#{$width} + #{$gap}) / #{$columns} - #{$gap});

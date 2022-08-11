@@ -8,8 +8,6 @@
   background-color: $background-dark-color;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero-bg-mobile.jpg');
-  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //   url('../images/hero-background.jpg');
   background-size: cover;
   background-position: center;
 
@@ -19,6 +17,8 @@
   }
 
   @media screen and (min-width: $width-tablet) {
+    max-width: 768px;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero-bg-tablet.jpg');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -28,6 +28,10 @@
   }
 
   @media screen and (min-width: $width-desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero-bg-desktop.jpg');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -47,27 +51,13 @@
 
   color: $title-secondary-color;
   text-transform: uppercase;
+
+  @media screen and (min-width: $width-desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
   margin-inline: auto;
-}
-
-@media screen and (min-width: $width-tablet) {
-  .hero {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: $width-desktop) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-  }
-
-  .hero__title {
-    font-size: 44px;
-    line-height: 1.36;
-  }
 }
