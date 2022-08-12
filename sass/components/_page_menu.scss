@@ -4,28 +4,20 @@
   @media screen and (max-width: ($width-tablet - 1px)) {
     position: fixed;
     z-index: 1;
-    top: 50%;
-    // bottom: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: auto;
+
+    top: 30px;
+    transform: translate(50%, -50%) scale(0);
     height: 100%;
-    right: 50%;
-    // left: 0;
     width: 100%;
-    transform: translate(50%, -50%) scale(1);
     overflow: auto;
     background-color: $background-primary-color;
 
-    transition-property: opacity, visibility, transform, top, right;
+    transition-property: opacity, visibility, transform;
     transition-duration: 300ms;
-  }
-}
-
-.page-menu--hidden {
-  @media screen and (max-width: ($width-tablet - 1px)) {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    top: 30px;
-    transform: translate(50%, -50%) scale(0);
   }
   @media screen and (max-width: ($width-mobile - 1px)) {
     right: 30px;
@@ -35,9 +27,23 @@
   }
 }
 
+.page-menu--visible {
+  @media screen and (max-width: ($width-tablet - 1px)) {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @media screen and (max-width: ($width-mobile - 1px)) {
+    transform: translate(30px, -30px) scale(1);
+  }
+  @media screen and (min-width: $width-mobile) and (max-width: ($width-tablet - 1px)) {
+    transform: translate(calc((100vw - #{$width-mobile}) / 2 + 30px), -30px) scale(1);
+  }
+}
+
 .page-menu__container {
   display: flex;
-  // position: relative;
 
   @media screen and (max-width: ($width-tablet - 1px)) {
     position: relative;

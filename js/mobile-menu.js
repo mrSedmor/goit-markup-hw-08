@@ -12,7 +12,7 @@
   function toggleMenu() {
     const expanded = refs.openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     refs.openMenuBtn.setAttribute('aria-expanded', !expanded);
-    refs.menu.classList.toggle('page-menu--hidden');
+    refs.menu.classList.toggle('page-menu--visible');
     refs.modalParent.classList.toggle('block-scroll--mobile');
   }
 })();

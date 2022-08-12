@@ -1429,41 +1429,52 @@ svg {
   .page-menu {
     position: fixed;
     z-index: 1;
-    top: 50%;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: auto;
+    top: 30px;
+    -webkit-transform: translate(50%, -50%) scale(0);
+            transform: translate(50%, -50%) scale(0);
     height: 100%;
-    right: 50%;
     width: 100%;
-    -webkit-transform: translate(50%, -50%) scale(1);
-            transform: translate(50%, -50%) scale(1);
     overflow: auto;
     background-color: #ffffff;
-    -webkit-transition-property: opacity, visibility, top, right, -webkit-transform;
-    transition-property: opacity, visibility, top, right, -webkit-transform;
-    transition-property: opacity, visibility, transform, top, right;
-    transition-property: opacity, visibility, transform, top, right, -webkit-transform;
+    -webkit-transition-property: opacity, visibility, -webkit-transform;
+    transition-property: opacity, visibility, -webkit-transform;
+    transition-property: opacity, visibility, transform;
+    transition-property: opacity, visibility, transform, -webkit-transform;
     -webkit-transition-duration: 300ms;
             transition-duration: 300ms;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .page-menu--hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    top: 30px;
-    -webkit-transform: translate(50%, -50%) scale(0);
-            transform: translate(50%, -50%) scale(0);
-  }
-}
 @media screen and (max-width: 479px) {
-  .page-menu--hidden {
+  .page-menu {
     right: 30px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .page-menu--hidden {
+  .page-menu {
     right: calc((100vw - 480px) / 2 + 30px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-menu--visible {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+@media screen and (max-width: 479px) {
+  .page-menu--visible {
+    -webkit-transform: translate(30px, -30px) scale(1);
+            transform: translate(30px, -30px) scale(1);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .page-menu--visible {
+    -webkit-transform: translate(calc((100vw - 480px) / 2 + 30px), -30px) scale(1);
+            transform: translate(calc((100vw - 480px) / 2 + 30px), -30px) scale(1);
   }
 }
 
