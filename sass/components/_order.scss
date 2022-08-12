@@ -29,8 +29,8 @@
   }
 
   @media screen and (min-width: $width-desktop) and (max-height: 581px),
-    screen and (min-width: $width-mobile) and (max-height: 595px),
-    screen and (min-width: 440px) and (max-height: 608px) {
+    screen and (min-width: 450px) and (max-height: 595px),
+    screen and (max-width: 449px) and (max-height: 608px) {
     top: 0;
     transform: translateX(-50%);
   }
