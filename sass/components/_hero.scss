@@ -1,7 +1,7 @@
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  max-width: 480px; // <-- Just remove it?!
   margin-inline: auto;
   text-align: center;
 
@@ -17,7 +17,7 @@
   }
 
   @media screen and (min-width: $width-tablet) {
-    max-width: 768px;
+    max-width: 768px; // <-- Just remove it?!
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero-bg-tablet.jpg');

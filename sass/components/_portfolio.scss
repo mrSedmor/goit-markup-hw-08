@@ -31,6 +31,7 @@
   transform: translateY(0);
 
   display: flex;
+  // flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 24px;
@@ -41,6 +42,7 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: $title-secondary-color;
+  // overflow: auto;
 
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms $timing-function;
@@ -51,7 +53,21 @@
   }
 }
 
+.portfolio__text {
+  max-height: 100%;
+  overflow: auto;
+}
+
+.portfolio__aligner {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.portfolio__wrapper {
+}
+
 .portfolio__description {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
@@ -76,7 +92,9 @@
 }
 
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   transition: box-shadow 250ms $timing-function;
 

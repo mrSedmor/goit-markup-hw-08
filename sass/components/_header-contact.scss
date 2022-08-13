@@ -66,8 +66,12 @@
 
     color: $accent-color;
 
-    @media screen and (max-width: 395px) {
-      font-size: 27px;
+    @media screen and (min-width: $width-min-allowable) and (max-width: 380px) {
+      font-size: calc((100vw - 80px) / 300 * 34);
+    }
+    @media screen and (max-width: ($width-min-allowable - 1)) {
+      $font-size: ($width-min-allowable - 80px) / 300 * 34;
+      font-size: $font-size;
     }
   }
   .header-contact__email {

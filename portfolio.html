@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-modal-parent>
     <!-- Хэдер скопирован из index.html -->
     <header class="header">
       <div class="container header__container">
@@ -108,29 +108,30 @@
                 <div class="portfolio__container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/desktop/img-1.jpg 1x, ./images/portfolio/desktop/img-1@2x.jpg 2x"
+                      srcset="./images/portfolio/img-1-des.jpg 1x, ./images/portfolio/img-1-des@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio/tablet/img-1.jpg 1x, ./images/portfolio/tablet/img-1@2x.jpg 2x"
+                      srcset="./images/portfolio/img-1-tab.jpg 1x, ./images/portfolio/img-1-tab@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/mobile/img-1.jpg 1x, ./images/portfolio/mobile/img-1@2x.jpg 2x"
+                      srcset="./images/portfolio/img-1-mob.jpg 1x, ./images/portfolio/img-1-mob@2x.jpg 2x"
                       media="(max-width: 767px)"
                     />
                     <img
-                      src="./images/portfolio/mobile/img-1.jpg"
+                      src="./images/portfolio/img-1-mob.jpg"
                       alt="Веб-сайт на екрані ноутбука"
                       width="450"
                       height="294"
                     />
                   </picture>
-
-                  <p class="portfolio__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
-                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="portfolio__description">
                   <h2 class="portfolio__title">Технокряк</h2>
@@ -143,26 +144,28 @@
                 <div class="portfolio__container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/desktop/img-2.jpg 1x, ./images/portfolio/desktop/img-2@2x.jpg 2x"
+                      srcset="./images/portfolio/img-2-des.jpg 1x, ./images/portfolio/img-2-des@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./images/portfolio/tablet/img-2.jpg 1x, ./images/portfolio/tablet/img-2@2x.jpg 2x"
+                      srcset="./images/portfolio/img-2-tab.jpg 1x, ./images/portfolio/img-2-tab@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/mobile/img-2.jpg 1x, ./images/portfolio/mobile/img-2@2x.jpg 2x"
+                      srcset="./images/portfolio/img-2-mob.jpg 1x, ./images/portfolio/img-2-mob@2x.jpg 2x"
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/mobile/img-2.jpg" alt="Два баскетболіста" width="450" height="294" />
+                    <img src="./images/portfolio/img-2-mob.jpg" alt="Два баскетболіста" width="450" height="294" />
                   </picture>
 
-                  <p class="portfolio__overlay">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium libero, molestiae nisi iure
-                    voluptates reprehenderit incidunt nihil accusantium atque, doloribus quo ut quasi officiis ducimus
-                    beatae accusamus sequi. Cupiditate, quia nisi. Quaerat natus ullam repellat.
-                  </p>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium libero, molestiae nisi iure
+                      voluptates reprehenderit incidunt nihil accusantium atque, doloribus quo ut quasi officiis ducimus
+                      beatae accusamus sequi. Cupiditate, quia nisi. Quaerat natus ullam repellat.
+                    </p>
+                  </div>
                 </div>
                 <div class="portfolio__description">
                   <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
@@ -175,31 +178,33 @@
                 <div class="portfolio__container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/desktop/img-3.jpg 1x, ./images/portfolio/desktop/img-3@2x.jpg 2x"
+                      srcset="./images/portfolio/img-3-des.jpg 1x, ./images/portfolio/img-3-des@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./images/portfolio/tablet/img-3.jpg 1x, ./images/portfolio/tablet/img-3@2x.jpg 2x"
+                      srcset="./images/portfolio/img-3-tab.jpg 1x, ./images/portfolio/img-3-tab@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/mobile/img-3.jpg 1x, ./images/portfolio/mobile/img-3@2x.jpg 2x"
+                      srcset="./images/portfolio/img-3-mob.jpg 1x, ./images/portfolio/img-3-mob@2x.jpg 2x"
                       media="(max-width: 767px)"
                     />
                     <img
-                      src="./images/portfolio/mobile/img-3.jpg"
+                      src="./images/portfolio/img-3-mob.jpg"
                       alt="Логотип ресторана Seafood"
                       width="450"
                       height="294"
                     />
                   </picture>
 
-                  <p class="portfolio__overlay">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam libero quasi facilis tenetur
-                    laborum cumque nobis esse iste rem, quo perferendis? Ut vero dolorem dignissimos, ratione
-                    repellendus deserunt odio alias.
-                  </p>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam libero quasi facilis tenetur
+                      laborum cumque nobis esse iste rem, quo perferendis? Ut vero dolorem dignissimos, ratione
+                      repellendus deserunt odio alias.
+                    </p>
+                  </div>
                 </div>
                 <div class="portfolio__description">
                   <h2 class="portfolio__title">Ресторан Seafood</h2>
@@ -212,26 +217,27 @@
                 <div class="portfolio__container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/desktop/img-4.jpg 1x, ./images/portfolio/desktop/img-4@2x.jpg 2x"
+                      srcset="./images/portfolio/img-4-des.jpg 1x, ./images/portfolio/img-4-des@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./images/portfolio/tablet/img-4.jpg 1x, ./images/portfolio/tablet/img-4@2x.jpg 2x"
+                      srcset="./images/portfolio/img-4-tab.jpg 1x, ./images/portfolio/img-4-tab@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/mobile/img-4.jpg 1x, ./images/portfolio/mobile/img-4@2x.jpg 2x"
+                      srcset="./images/portfolio/img-4-mob.jpg 1x, ./images/portfolio/img-4-mob@2x.jpg 2x"
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/mobile/img-4.jpg" alt="Накладні навушники" width="450" height="294" />
+                    <img src="./images/portfolio/img-4-mob.jpg" alt="Накладні навушники" width="450" height="294" />
                   </picture>
-
-                  <p class="portfolio__overlay">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sunt nihil optio laudantium incidunt
-                    aliquam enim officiis maiores perferendis blanditiis impedit commodi delectus, minus magni maxime
-                    exercitationem? Vitae soluta, magni ducimus dolor fuga voluptate nam!
-                  </p>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sunt nihil optio laudantium
+                      incidunt aliquam enim officiis maiores perferendis blanditiis impedit commodi delectus, minus
+                      magni maxime exercitationem? Vitae soluta, magni ducimus dolor fuga voluptate nam!
+                    </p>
+                  </div>
                 </div>
                 <div class="portfolio__description">
                   <h2 class="portfolio__title">Проєкт Prime</h2>
@@ -244,30 +250,26 @@
                 <div class="portfolio__container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/desktop/img-5.jpg 1x, ./images/portfolio/desktop/img-5@2x.jpg 2x"
+                      srcset="./images/portfolio/img-5-des.jpg 1x, ./images/portfolio/img-5-des@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./images/portfolio/tablet/img-5.jpg 1x, ./images/portfolio/tablet/img-5@2x.jpg 2x"
+                      srcset="./images/portfolio/img-5-tab.jpg 1x, ./images/portfolio/img-5-tab@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/mobile/img-5.jpg 1x, ./images/portfolio/mobile/img-5@2x.jpg 2x"
+                      srcset="./images/portfolio/img-5-mob.jpg 1x, ./images/portfolio/img-5-mob@2x.jpg 2x"
                       media="(max-width: 767px)"
                     />
-                    <img
-                      src="./images/portfolio/mobile/img-5.jpg"
-                      alt="Дві картонні коробочки"
-                      width="450"
-                      height="294"
-                    />
+                    <img src="./images/portfolio/img-5-mob.jpg" alt="Дві картонні коробочки" width="450" height="294" />
                   </picture>
-
-                  <p class="portfolio__overlay">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum officiis iure sit omnis qui ullam
-                    fugiat accusamus rerum dolore iste.
-                  </p>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum officiis iure sit omnis qui ullam
+                      fugiat accusamus rerum dolore iste.
+                    </p>
+                  </div>
                 </div>
                 <div class="portfolio__description">
                   <h2 class="portfolio__title">Проєкт Boxes</h2>
@@ -280,25 +282,26 @@
                 <div class="portfolio__container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/desktop/img-6.jpg 1x, ./images/portfolio/desktop/img-6@2x.jpg 2x"
+                      srcset="./images/portfolio/img-6-des.jpg 1x, ./images/portfolio/img-6-des@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./images/portfolio/tablet/img-6.jpg 1x, ./images/portfolio/tablet/img-6@2x.jpg 2x"
+                      srcset="./images/portfolio/img-6-tab.jpg 1x, ./images/portfolio/img-6-tab@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/mobile/img-6.jpg 1x, ./images/portfolio/mobile/img-6@2x.jpg 2x"
+                      srcset="./images/portfolio/img-6-mob.jpg 1x, ./images/portfolio/img-6-mob@2x.jpg 2x"
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/mobile/img-6.jpg" alt="Монітор з веб-сатом" width="450" height="294" />
+                    <img src="./images/portfolio/img-6-mob.jpg" alt="Монітор з веб-сатом" width="450" height="294" />
                   </picture>
-
-                  <p class="portfolio__overlay">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo veniam, optio corporis at eligendi id
-                    distinctio, ducimus numquam hic esse repellat unde soluta quidem! Quaerat.
-                  </p>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo veniam, optio corporis at eligendi
+                      id distinctio, ducimus numquam hic esse repellat unde soluta quidem! Quaerat.
+                    </p>
+                  </div>
                 </div>
                 <div class="portfolio__description">
                   <h2 class="portfolio__title">Inspiration has no Borders</h2>
@@ -311,30 +314,31 @@
                 <div class="portfolio__container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/desktop/img-7.jpg 1x, ./images/portfolio/desktop/img-7@2x.jpg 2x"
+                      srcset="./images/portfolio/img-7-des.jpg 1x, ./images/portfolio/img-7-des@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./images/portfolio/tablet/img-7.jpg 1x, ./images/portfolio/tablet/img-7@2x.jpg 2x"
+                      srcset="./images/portfolio/img-7-tab.jpg 1x, ./images/portfolio/img-7-tab@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/mobile/img-7.jpg 1x, ./images/portfolio/mobile/img-7@2x.jpg 2x"
+                      srcset="./images/portfolio/img-7-mob.jpg 1x, ./images/portfolio/img-7-mob@2x.jpg 2x"
                       media="(max-width: 767px)"
                     />
                     <img
-                      src="./images/portfolio/mobile/img-7.jpg"
+                      src="./images/portfolio/img-7-mob.jpg"
                       alt="Відкритий разворот брошури"
                       width="450"
                       height="294"
                     />
                   </picture>
-
-                  <p class="portfolio__overlay">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo et autem, culpa, accusantium
-                    pariatur a soluta commodi molestiae exercitationem ullam similique blanditiis ratione officiis.
-                  </p>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo et autem, culpa, accusantium
+                      pariatur a soluta commodi molestiae exercitationem ullam similique blanditiis ratione officiis.
+                    </p>
+                  </div>
                 </div>
                 <div class="portfolio__description">
                   <h2 class="portfolio__title">Видання Limited Edition</h2>
@@ -347,25 +351,26 @@
                 <div class="portfolio__container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/desktop/img-8.jpg 1x, ./images/portfolio/desktop/img-8@2x.jpg 2x"
+                      srcset="./images/portfolio/img-8-des.jpg 1x, ./images/portfolio/img-8-des@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./images/portfolio/tablet/img-8.jpg 1x, ./images/portfolio/tablet/img-8@2x.jpg 2x"
+                      srcset="./images/portfolio/img-8-tab.jpg 1x, ./images/portfolio/img-8-tab@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/mobile/img-8.jpg 1x, ./images/portfolio/mobile/img-8@2x.jpg 2x"
+                      srcset="./images/portfolio/img-8-mob.jpg 1x, ./images/portfolio/img-8-mob@2x.jpg 2x"
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/mobile/img-8.jpg" alt="Картонна бирка" width="450" height="294" />
+                    <img src="./images/portfolio/img-8-mob.jpg" alt="Картонна бирка" width="450" height="294" />
                   </picture>
-
-                  <p class="portfolio__overlay">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda architecto placeat quae
-                    consequatur quod quasi!
-                  </p>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda architecto placeat quae
+                      consequatur quod quasi!
+                    </p>
+                  </div>
                 </div>
                 <div class="portfolio__description">
                   <h2 class="portfolio__title">Проєкт LAB</h2>
@@ -378,31 +383,27 @@
                 <div class="portfolio__container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/desktop/img-9.jpg 1x, ./images/portfolio/desktop/img-9@2x.jpg 2x"
+                      srcset="./images/portfolio/img-9-des.jpg 1x, ./images/portfolio/img-9-des@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./images/portfolio/tablet/img-9.jpg 1x, ./images/portfolio/tablet/img-9@2x.jpg 2x"
+                      srcset="./images/portfolio/img-9-tab.jpg 1x, ./images/portfolio/img-9-tab@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/mobile/img-9.jpg 1x, ./images/portfolio/mobile/img-9@2x.jpg 2x"
+                      srcset="./images/portfolio/img-9-mob.jpg 1x, ./images/portfolio/img-9-mob@2x.jpg 2x"
                       media="(max-width: 767px)"
                     />
-                    <img
-                      src="./images/portfolio/mobile/img-9.jpg"
-                      alt="Застосунок на ноутбуці"
-                      width="450"
-                      height="294"
-                    />
+                    <img src="./images/portfolio/img-9-mob.jpg" alt="Застосунок на ноутбуці" width="450" height="294" />
                   </picture>
-
-                  <p class="portfolio__overlay">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, atque. Temporibus laborum
-                    assumenda repellat, cumque, deserunt eveniet sed veritatis sint, asperiores quisquam neque impedit
-                    fugit? Odio assumenda accusantium ipsum. Rerum.
-                  </p>
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, atque. Temporibus laborum
+                      assumenda repellat, cumque, deserunt eveniet sed veritatis sint, asperiores quisquam neque impedit
+                      fugit? Odio assumenda accusantium ipsum. Rerum.
+                    </p>
+                  </div>
                 </div>
                 <div class="portfolio__description">
                   <h2 class="portfolio__title">Growing Business</h2>

@@ -52,7 +52,8 @@
 }
 
 .section__area {
-  @media screen and (max-width: ($width-desktop - 1px)) {
-    display: none;
+  display: none;
+  @media screen and (min-width: $width-desktop) {
+    display: block;
   }
 }
